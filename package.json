@@ -18,7 +18,7 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://estefaniaurro.github.io/buscador-peliculas/",
+  "homepage": "./",
   "browserslist": {
     "production": [
       ">0.2%",
