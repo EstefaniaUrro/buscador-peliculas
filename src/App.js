@@ -11,7 +11,7 @@ function App() {
     <div>
       <Switch>
         <Route exact path='/' component={GestorBuscador} />
-        <Route path='/detalle/:id' component={Detalle} />
+        <Route path='/:id' component={Detalle} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
