@@ -13,6 +13,7 @@ export default class Formulario extends Component {
         e.preventDefault();
         const { inputMovie } = this.state;
         const ruta = API_PELI + `&s=${inputMovie}`
+        console.log(ruta);
         fetch(ruta)
             .then(res => res.json())
             .then(

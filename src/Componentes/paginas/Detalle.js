@@ -17,6 +17,7 @@ export default class Detalle extends Component {
 
     _leerPelicula = (id) => {
         const ruta = API_PELI + `&i=${id}`
+        console.log(ruta);
         fetch(ruta)
             .then(res => res.json())
             .then(pelicula => {
