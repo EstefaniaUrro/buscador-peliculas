@@ -30,21 +30,20 @@ export default class Detalle extends Component {
         let img = <img
             alt={Title}
             src={Poster}
-            style={{ height: "300px", marginTop: "1rem" }} />
+            style={{height: "280px", width: "230px", marginTop: "1rem" }} />
         if (Poster === "N/A") {
             console.log("No hay poster");
             img = <img
-                alt={Title}
-                src={movie}
-                style={{ width: "200px", height: "300px", marginTop: "1rem" }} />
+            alt={Title}
+            src={movie}
+            style={{height: "280px", width: "230px", marginTop: "1rem" }} />
         }
         return (
-            <div className="container">
                 <div className="container"
                     style={{
                         backgroundColor: "#f3ecec73",
-                        paddingBottom: '20px',
-                        margin: "5% 0"
+                        padding: "3rem",
+                        margin: "5% auto"
                     }} >
                     <div className="row">
                         <div className="col-10 mt-3">
@@ -58,7 +57,7 @@ export default class Detalle extends Component {
                                     <div className="card-body">
                                         <h2 className="card-title">{Title}</h2>
                                         <div className="card-text">
-                                            <div className="grid-container">
+                                            <div className="grid-container" >
                                                 <div><b>Año: </b><span>{Year}</span></div>
                                                 <div><b>Duración: </b><span>{Runtime}</span></div>
                                                 <div><b>Director: </b><span>{Director}</span></div>
@@ -70,7 +69,7 @@ export default class Detalle extends Component {
                                             </div>
                                             <Link to={`/`} >
                                                 Volver
-                                        </Link>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -78,7 +77,6 @@ export default class Detalle extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
         )
     }
 }

@@ -29,7 +29,7 @@ export default class MontarPoster extends Component {
                                 {img}
                             </div>
                             <div className="flip-card-back">
-                                <h1 className="card-title">{linea.Title}</h1>
+                                <h3 className="card-title">{linea.Title}</h3>
                                 <h3>{linea.Year}</h3>
                             </div>
                         </div>
